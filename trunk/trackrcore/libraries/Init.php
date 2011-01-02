@@ -41,9 +41,9 @@ class Init {
     }
 
     // get username from session
-    function _get_session_username() {
+    function _get_session_email() {
         $CI = & get_instance();
-        $uid = $CI->session->userdata('username');
+        $uid = $CI->session->userdata('email');
         return $uid;
     }
 
@@ -51,7 +51,7 @@ class Init {
     function _is_logged_in_redirect($redirect_url) {
         $CI = & get_instance();
         $is_logged_in = $CI->session->userdata('is_logged_in');
-        if (isset($is_logged_in) || $is_logged_in == TRUE) {
+        if ($is_logged_in == '1') {
             // @todo CI is initialized twice due the redirect, need to verify and fix it.
             redirect($redirect_url);
         }
@@ -61,7 +61,7 @@ class Init {
     function _is_not_logged_in_redirect($redirect_url) {
         $CI = & get_instance();
         $is_logged_in = $CI->session->userdata('is_logged_in');
-        if (!isset($is_logged_in) || $is_logged_in != TRUE) {
+        if ($is_logged_in == '0') {
             // @todo CI is initialized twice due the redirect, need to verify and fix it.
             redirect($redirect_url);
         }

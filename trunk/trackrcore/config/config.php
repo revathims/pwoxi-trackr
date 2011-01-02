@@ -27,7 +27,6 @@ $config['base_url'] = "http://trackr.local/";
 $config['site_name'] = "Trackr";
 $config['site_email'] = "webmaster@trackr.local";
 $config['site_version'] = SITE_VERSION;
-$config['site_beta'] = FALSE;
 /*
 |--------------------------------------------------------------------------
 | Asset URLs
@@ -207,7 +206,7 @@ $config['directory_trigger'] = 'd'; // experimental not currently in use
   | your log files will fill up very fast.
   |
  */
-$config['log_threshold'] = 4;
+$config['log_threshold'] = 0;
 
 /*
   |--------------------------------------------------------------------------
@@ -275,7 +274,7 @@ $config['sess_cookie_name'] = 'pwoxi-trackr-session';
 $config['sess_expiration'] = 7200;
 $config['sess_expire_on_close'] = TRUE;
 $config['sess_encrypt_cookie'] = TRUE;
-$config['sess_use_database'] = TRUE;
+$config['sess_use_database'] = FALSE; // @todo TRUE it if needed.
 $config['sess_table_name'] = 'sessions';
 $config['sess_match_ip'] = TRUE;
 $config['sess_match_useragent'] = TRUE;
@@ -304,7 +303,7 @@ $config['cookie_path'] = "/";
   | COOKIE data is encountered
   |
  */
-$config['global_xss_filtering'] = TRUE;
+$config['global_xss_filtering'] = FALSE;
 
 /*
   |--------------------------------------------------------------------------
@@ -314,7 +313,7 @@ $config['global_xss_filtering'] = TRUE;
   | checked on a submitted form. If you are accepting user data, it is strongly
   | recommended CSRF protection be enabled.
  */
-$config['csrf_protection'] = TRUE;
+$config['csrf_protection'] = FALSE;
 
 
 /*
