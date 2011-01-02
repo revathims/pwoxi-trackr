@@ -227,12 +227,11 @@ class Users extends Controller {
             // if the user's credentials validated...
             if ($query) {
                 //getting uid by username
-                $login_user = $this->users_model->get_uid_and_main_contact_by_username($this->input->post('username'));
+                $login_user = $this->users_model->get_uid_by_username($this->input->post('username'));
                 log_message('info', 'UID By Username: ' . $login_user->uid);
                 log_message('info', 'Main Contact By Username: ' . $login_user->main_contact);
                 // update user's timestamp.
                 $update_timestamp = $this->users_model->set_last_login_timestamp_by_uid($login_user->uid);
-
                 $login_session_data = array('username' => $this->input->post('username'),
                     'uid' => $login_user->uid,
                     'main_contact' => $login_user->main_contact,

@@ -33,6 +33,8 @@
 */
 
 $route['default_controller'] = "home";
+// route for logout
+$route['logout'] = "/login/logout/";
 
 
 /* End of file routes.php */
