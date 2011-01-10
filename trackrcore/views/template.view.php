@@ -39,6 +39,7 @@
                 <div class="cleardiv"></div>
             </div>
             <?php $this->load->view($main_content); ?>
+
             <div id="footer" class="ui-corner-all"> Copyright &copy; <?php echo date('Y'); ?>. Pwoxi Solutions - <?php echo $site_name; ?></div>
         </div>
     </body>

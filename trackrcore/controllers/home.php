@@ -16,7 +16,7 @@ class Home extends CI_Controller {
 
     function index() {
         global $data;
-        $data['main_content'] = 'home/home.view.php';
+         $data['main_content'] = 'home/home.view.php';
         $this->load->view('template.view.php', $data);
     }
 
