@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 02, 2011 at 07:28 PM
+-- Generation Time: Jan 23, 2011 at 08:59 PM
 -- Server version: 5.1.33
 -- PHP Version: 5.2.9-2
 
@@ -97,4 +97,4 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`uid`, `cid`, `first_name`, `last_name`, `job_title`, `email`, `password`, `profile_pic_path`, `created_date`, `updated_date`, `last_login_on`) VALUES
-(1, 1, 'Arfeen', 'Arif', 'Project Manager', 'pwoxisolutions@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '', 1293909153, 1293909153, 1293978014);
+(1, 1, 'Arfeen', 'Arif', 'Project Manager', 'pwoxisolutions@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '', 1293909153, 1293909153, 1295796856);
