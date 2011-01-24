@@ -40,6 +40,23 @@ class Init {
         return $uid;
     }
 
+    // get cid from user's session
+    function _get_cid() {
+        $CI = & get_instance();
+        $uid = $CI->session->userdata('uid');
+        $CI->db->select('companies.cid');
+        $CI->db->from('companies');
+        $CI->db->where('uid', $uid);
+        $CI->db->join('users', 'companies.cid = users.cid', 'inner');
+        $query = $CI->db->get();
+        if ($query->num_rows == 1) {
+            $row = $query->row();
+            return $row->cid;
+        } else {
+            return NULL;
+        }
+    }
+
     // get username from session
     function _get_session_email() {
         $CI = & get_instance();

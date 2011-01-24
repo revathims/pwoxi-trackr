@@ -31,7 +31,7 @@
                 <div id="mainnav">
                     <ul>
                         <li><a href="<?php echo $base_url; ?>">People</a></li>
-                        <li><a href="<?php echo $base_url; ?>">Projects</a></li>
+                        <li><a href="<?php echo $base_url; ?>projects">Projects</a></li>
                     </ul>
 
                 </div>

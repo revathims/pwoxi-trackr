@@ -63,6 +63,7 @@ h1,h2 {
     font-weight: bold;
     margin: 24px 0 2px 0;
     padding: 5px 0 6px 0;
+    margin-bottom: 20px;
 }
 
 code {
@@ -87,6 +88,16 @@ code {
                                                         width: 300px;
                                                         display: block;
 }
+
+.forms input[type=text].long {  
+    width: 600px;
+
+}
+
+.forms input[type=text].small {  
+    width: 100px;
+
+}
 .forms { margin-left: auto; margin-right: auto; text-align: center; }
 .forms label { font-weight: bold; margin-bottom: 5px; display: block;}
 #loginform { width: 300px; margin: auto;}
@@ -107,20 +118,31 @@ code {
 }
 .ui-state-error {
     border: 1px solid;
-    padding:10px;
+    padding:5px;
     color: #D8000C;
     background-color: #FFBABA;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     width: 100%;
 }
 .normal #logo { float: left; width: 210px; }
 .normal #topnav { float: right; width: 400px; display: block; text-align: right;}
 .normal #topnav ul, .normal #mainnav ul {text-align: right;}
-.normal #topnav ul li, .normal #mainnav ul li {display: inline; padding-left: 5px;}
+.normal #topnav ul li, .normal #mainnav ul li, .normal #secnav ul li {display: inline; padding-left: 5px;}
 .normal #topnav a {font-size: 10px;}
 .cleardiv{clear:both;font-size:0;height:0;margin:0;padding:0;}
 .normal #mainnav { display: block; text-align: right; width: 600px; float: right; margin-top: 15px; }
 .normal #mainnav a { padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; background: #7ABF13; color: #FFFFFF; font-weight: bold; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: green;}
+.normal #secnav { display: block; text-align: right; float: right; }
+.normal #secnav a { padding-right: 10px; padding-left: 10px; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+.project { color: #444;
+    background-color: transparent;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.project .project_label { float: left; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; background: #7ABF13; color: #FFFFFF; font-weight: bold; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: green; }
