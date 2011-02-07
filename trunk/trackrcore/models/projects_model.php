@@ -17,7 +17,7 @@ class Projects_model extends CI_Model {
             'created_date' => time()
         );
 
-        // insert into db - users
+        // insert into db - projects
         $insert_project = $this->db->insert('projects', $new_insert_data);
         // getting last instered uid from DB
         $project_id = $this->db->insert_id();
@@ -35,6 +35,7 @@ class Projects_model extends CI_Model {
         $this->db->select("*");
         $this->db->from('projects');
         $this->db->where('cid', $cid);
+        $this->db->order_by("created_date", "desc");
         $query = $this->db->get();
         if ($query->num_rows >= 1) {
             return $query->result_array();

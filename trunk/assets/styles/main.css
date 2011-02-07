@@ -118,13 +118,13 @@ code {
 }
 .ui-state-error {
     border: 1px solid;
-    padding:5px;
+    padding:7px;
     color: #D8000C;
     background-color: #FFBABA;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     width: 100%;
 }
 .normal #logo { float: left; width: 210px; }
@@ -135,14 +135,17 @@ code {
 .cleardiv{clear:both;font-size:0;height:0;margin:0;padding:0;}
 .normal #mainnav { display: block; text-align: right; width: 600px; float: right; margin-top: 15px; }
 .normal #mainnav a { padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; background: #7ABF13; color: #FFFFFF; font-weight: bold; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: green;}
-.normal #secnav { display: block; text-align: right; float: right; }
-.normal #secnav a { padding-right: 10px; padding-left: 10px; font-weight: bold; text-transform: uppercase; text-decoration: none; }
-.project { color: #444;
+.normal #secnav { display: block; text-align: right; float: right; margin-bottom: 20px; text-align: right; }
+.normal #secnav a { padding-left: 10px; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+
+.list { color: #444;
     background-color: transparent;
     border-bottom: 1px solid #D0D0D0;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-bottom: 10px;
 }
-.project .project_label { float: left; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; background: #7ABF13; color: #FFFFFF; font-weight: bold; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: green; }
+.list .name { display: block; font-weight: bold; margin-bottom: 2px;}
+.list .desc { display: block; font-weight: normal; font-size: 11px;}
+.list .label { float: right; padding-top: 2px; padding-bottom: 2px; padding-right: 5px; padding-left: 5px; background: #E0ECFF; color: #333; font-weight: normal; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: #206CFF; margin-right: 15px; font-size: 10px; }

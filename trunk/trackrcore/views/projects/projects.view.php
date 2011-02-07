@@ -6,15 +6,27 @@
 </div>
 <div class="cleardiv"></div>
 
-<div class="projectlist">
-    <?php foreach ($projects as $row) {
+<div class="projeclist">
+
+    <?php 
+    if (count($projects) > 0) {
+     foreach ($projects as $row) {
+    
     ?>
     
-        <div class="project">
-            <div class="project_label"><?php echo $row['label']; ?></div>
-            <div class="project_name"><?php echo $row['project_name']; ?></div>
-            <div class="project_desc"><?php echo $row['project_description']; ?></div>
+        <div class="list">
+            <div class="label"><?php echo $row['label']; ?></div>
+            <div class="name"><?php echo $row['project_name']; ?></div>
+            <div class="desc"><?php echo $row['project_description']; ?></div>
                
+        </div>
+
+    <?php }
+
+    } else { ?>
+
+ <div class="list">
+            <div class="name">No projects, yet. </div>
         </div>
 
     <?php } ?>

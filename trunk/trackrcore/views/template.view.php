@@ -22,15 +22,15 @@
                 <div id="topnav">
 
                     <ul>
-                        <li><a href="<?php echo $base_url; ?>">Home</a></li>
-                        <li><a href="<?php echo $base_url; ?>settings">My Company</a></li>
-                        <li><a href="<?php echo $base_url; ?>profile">Profile</a></li>
-                        <li><a href="<?php echo $base_url; ?>logout">Logout</a></li>
+<!-- <li><a href="<?php //echo $base_url;   ?>">Home</a></li>
+                        <li><a href="<?php //echo $base_url;   ?>settings">My Company</a></li>
+                        <li><a href="<?php //echo $base_url;   ?>profile">Profile</a></li>-->
+                        <li><a href="<?php //echo $base_url;   ?>logout">Logout</a></li>
                     </ul>
                 </div>
                 <div id="mainnav">
                     <ul>
-                        <li><a href="<?php echo $base_url; ?>">People</a></li>
+                        <li><a href="<?php echo $base_url; ?>people">People</a></li>
                         <li><a href="<?php echo $base_url; ?>projects">Projects</a></li>
                     </ul>
 
