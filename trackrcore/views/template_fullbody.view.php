@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=7" />
         <title><?php echo $site_name; ?></title>
         <?php echo add_jscript('jquery'); ?>
+        <?php echo add_jscript('jquery_ui'); ?>
         <?php echo add_jscript('lib'); ?>
         <?php echo add_style('main'); ?>
+        <?php echo add_style('jquery_ui'); ?>
     </head>
     <body>
         <!-- hidden stuff start -->
@@ -18,6 +20,7 @@
             <div id="logo"> <a href="<?php echo $base_url; ?>"><?php echo img_tag('logo.png', ' alt="' . $site_name . '"'); ?></a> </div>
 
             <?php $this->load->view($main_content); ?>
+            <div id="footer" class="ui-corner-all"> Copyright &copy; <?php echo date('Y'); ?>. Pwoxi Solutions - <?php echo $site_name; ?></div>
 
         </div>
 

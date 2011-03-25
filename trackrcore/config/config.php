@@ -28,22 +28,22 @@ $config['site_name'] = "Trackr";
 $config['site_email'] = "webmaster@trackr.local";
 $config['site_version'] = SITE_VERSION;
 /*
-|--------------------------------------------------------------------------
-| Asset URLs
-|--------------------------------------------------------------------------
-|
-| Paths to your images, javascripts and stylesheets. It's probably best to
-| keep these in your web root, NOT in your CodeIgniter system folder.
-| These paths must contain a trailing slash.
-|
-| The Assets Helper uses these when building paths to assets.
-|
-*/
-$config['image_path']  = "assets/images/";
-$config['javascript_path']= "assets/javascripts/";
-$config['stylesheet_path']= "assets/styles/";
-$config['company_images_path']= "assets/company-images/";
-$config['profile_images_path']= "assets/profile-images/";
+  |--------------------------------------------------------------------------
+  | Asset URLs
+  |--------------------------------------------------------------------------
+  |
+  | Paths to your images, javascripts and stylesheets. It's probably best to
+  | keep these in your web root, NOT in your CodeIgniter system folder.
+  | These paths must contain a trailing slash.
+  |
+  | The Assets Helper uses these when building paths to assets.
+  |
+ */
+$config['image_path'] = "assets/images/";
+$config['javascript_path'] = "assets/javascripts/";
+$config['stylesheet_path'] = "assets/styles/";
+$config['company_images_path'] = "assets/company-images/";
+$config['profile_images_path'] = "assets/profile-images/";
 
 /*
   |--------------------------------------------------------------------------
@@ -303,7 +303,7 @@ $config['cookie_path'] = "/";
   | COOKIE data is encountered
   |
  */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
   |--------------------------------------------------------------------------
@@ -313,7 +313,7 @@ $config['global_xss_filtering'] = FALSE;
   | checked on a submitted form. If you are accepting user data, it is strongly
   | recommended CSRF protection be enabled.
  */
-$config['csrf_protection'] = FALSE;
+$config['csrf_protection'] = TRUE;
 
 
 /*

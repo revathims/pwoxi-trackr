@@ -9,6 +9,34 @@ $(document).ready(function()
         }).bind("ajaxComplete", function(){
             $(this).hide();
         });
+        
+        // jQuery UI Buttons
+        $( "input:submit, a.button").button();
+        $( "a.button" ).click(function() {
+            return false;
+        });
+        
+        // jQuery UI Overlay Dialog
+        $( "#dialog:ui-dialog" ).dialog( "destroy" );
+        
+        
+        // forget password dialog
+        $( "#dialog-forgot" ).hide();
+        $("#forgetpassword").click(function ()
+        {
+            
+            $( "#dialog-forgot" ).dialog({
+                modal: true,
+                buttons: {
+                    Ok: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            });
+
+        });
+
+        
 
         // ajax to check username.
         $('#createuser #username').blur(function (){
@@ -42,16 +70,7 @@ $(document).ready(function()
             })
         });
 								
-        // show beta warning.
-        $("#beta-warning").dialog({
-            bgiframe: true,
-            modal: true,
-            buttons: {
-                Ok: function() {
-                    $(this).dialog('close');
-                }
-            }
-        }); // end beta warning.
+        
 
     }); // document ready end here
 

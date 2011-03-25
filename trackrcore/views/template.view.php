@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=7" />
         <title><?php echo $site_name; ?></title>
         <?php echo add_jscript('jquery'); ?>
+        <?php echo add_jscript('jquery_ui'); ?>
         <?php echo add_jscript('lib'); ?>
         <?php echo add_style('main'); ?>
+        <?php echo add_style('jquery_ui'); ?>
     </head>
     <body>
         <!-- hidden stuff start -->
@@ -24,7 +26,8 @@
                     <ul>
 <!-- <li><a href="<?php //echo $base_url;   ?>">Home</a></li>
                         <li><a href="<?php //echo $base_url;   ?>settings">My Company</a></li>
-                        <li><a href="<?php //echo $base_url;   ?>profile">Profile</a></li>-->
+                        -->
+                        <li><a href="<?php //echo $base_url;   ?>account">Profile</a></li>
                         <li><a href="<?php //echo $base_url;   ?>logout">Logout</a></li>
                     </ul>
                 </div>

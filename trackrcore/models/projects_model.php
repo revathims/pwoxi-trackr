@@ -7,12 +7,16 @@ class Projects_model extends CI_Model {
     }
 
     function add_project($cid, $uid) {
+        
+        // auto creating label
+        $label = create_label($this->input->post('project_name'));
+        
         // setting up array for project insert
         $new_insert_data = array(
             'cid' => $cid,
             'uid' => $uid,
             'project_name' => $this->input->post('project_name'),
-            'label' => $this->input->post('label'),
+            'label' => $label,
             'project_description' => $this->input->post('project_description'),
             'created_date' => time()
         );
