@@ -13,7 +13,7 @@ class People_model extends CI_Model {
             'first_name' => $this->input->post('first_name'),
             'last_name' => $this->input->post('last_name'),
             'email' => $this->input->post('email'),
-            'password' => $this->input->post('password'),
+            'password' => md5($this->input->post('password')),
             'created_date' => time()
         );
 

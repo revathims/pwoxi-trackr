@@ -20,14 +20,6 @@
         'class' => 'ui-corner-all'
     );
 
-    $label = array(
-        'name' => 'label',
-        'id' => 'label',
-        'size' => 10,
-        'value' => set_value('label'),
-        'class' => 'ui-corner-all'
-    );
-
     $project_description = array(
         'name' => 'project_description',
         'id' => 'project_description',
@@ -38,8 +30,6 @@
     echo form_open('projects/'.$formtype);
     echo form_label('Name', $project_name['id']);
     echo form_input($project_name);
-    echo form_label('Label', $label['id']);
-    echo form_input($label);
     echo form_label('Description', $project_description['id']);
     echo form_input($project_description);
     echo form_hidden('action', $formtype);

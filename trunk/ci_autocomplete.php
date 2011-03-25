@@ -3,6 +3,7 @@
 /**
 * @property CI_DB_active_record $db
 * @property CI_DB_forge $dbforge
+* @property CI_Cache $cache
 * @property CI_Calendar $calendar
 * @property CI_Cart $cart
 * @property CI_Driver $driver
@@ -30,8 +31,12 @@
 * @property CI_Xmlrpcs $xmlrpcs
 * @property CI_Zip $zip
 * @property Init $init
+* @property Account_Model $account_model
+* @property Login_Model $login_model
+* @property People_Model $people_model
+* @property Projects_Model $projects_model
 */
 
-class CI_Controller {}
+class Controller {}
 
 ?>

@@ -15,7 +15,7 @@
     ?>
     
         <div class="list">
-            <div class="label"><?php echo $row['label']; ?></div>
+            <div class="<?php echo label_colors(); ?>"><?php echo $row['label']; ?></div>
             <div class="name"><?php echo $row['project_name']; ?></div>
             <div class="desc"><?php echo $row['project_description']; ?></div>
                

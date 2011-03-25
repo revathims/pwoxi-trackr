@@ -53,6 +53,7 @@ a {
     color: #003399;
     background-color: transparent;
     font-weight: normal;
+    cursor: pointer;
 }
 
 h1,h2 {
@@ -100,32 +101,15 @@ code {
 }
 .forms { margin-left: auto; margin-right: auto; text-align: center; }
 .forms label { font-weight: bold; margin-bottom: 5px; display: block;}
-#loginform { width: 300px; margin: auto;}
-#footer { text-align: left; margin-top: 20px; border-top: 1px solid #C8C8C8; padding-top: 10px;}
-
-.forms input[type=submit] {
-    padding: 6px 10px;
-    -webkit-border-radius: 2px 2px;
-    border: solid 1px rgb(153, 153, 153);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(221, 221, 221)));
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    text-shadow: 0px 1px 1px rgba(255,255,255,1);
-    line-height: 1;
-}
-.ui-state-error {
-    border: 1px solid;
-    padding:7px;
-    color: #D8000C;
-    background-color: #FFBABA;
+#loginform { width: 320px; margin: auto;}
+#footer { text-align: left; margin-top: 50px; border-top: 1px solid #C8C8C8; padding-top: 10px;}
+.ui-state-error, .ui-state-highlight {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 8px;
     margin-top: 8px;
     width: 100%;
+    padding:7px;
 }
 .normal #logo { float: left; width: 210px; }
 .normal #topnav { float: right; width: 400px; display: block; text-align: right;}
@@ -148,4 +132,67 @@ code {
 }
 .list .name { display: block; font-weight: bold; margin-bottom: 2px;}
 .list .desc { display: block; font-weight: normal; font-size: 11px;}
-.list .label { float: right; padding-top: 2px; padding-bottom: 2px; padding-right: 5px; padding-left: 5px; background: #E0ECFF; color: #333; font-weight: normal; text-transform: uppercase; text-decoration: none; border: 1px solid; border-color: #206CFF; margin-right: 15px; font-size: 10px; }
+.list .labelblack, .list .labelpurple, .list .labelfrost, .list .labelautumn, .list .labelyellow, .list .labelleaf, .list .labeldarkblue, .list .labellime, .list .labelorange, .list .labelred, .list .labelturk, .list .labelviolet, .list .label, .list .labelpink, .list .labellightblue, .list .labelblue, .list .labelolive, .list .labelgreen, .list .labelbrown{ float: right; padding-top: 2px; padding-bottom: 2px; padding-right: 5px; padding-left: 5px; font-weight: normal; text-transform: uppercase; text-decoration: none; font-size: 10px; color: #000000 }
+.list .labelpink{
+ background-color: #F1A9E7;
+}
+.list .labellightblue{
+ background-color: #99CCFF;
+}
+.list .labelblue{
+ background-color: #3019FF;
+ color: #FFF;
+}
+.list .labelolive{
+ background-color: #CCCC66;
+}
+.list .labelgreen{
+ background-color: #37B700;
+}
+.list .labelbrown{
+ background-color: #C5AD98;
+}
+.list .labelviolet{
+ background-color: #CEA6CE;
+}
+.list .labelturk{
+ background-color: #8FCDB6;
+}
+.list .labelred{
+ background-color: #EE998A ;
+}
+.list .labelorange{
+ background-color: #FF9E28 ;
+}
+.list .labellime{
+ background-color: #B6FF00 ;
+}
+.list .labeldarkblue{
+ background-color: #21007F ;
+ color: #FFF;
+}
+.list .labelleaf{
+ background-color: #00CC00 ;
+}
+.list .labelyellow{
+ background-color: #FFFF00 ;
+}
+.list .labelautumn{
+ background-color: #B24700 ;
+}
+.list .labelfrost{
+ background-color: #80C8FE ;
+}
+.list .labelpurple{
+ background-color: #8E006B ;
+ color: #FFF;
+}
+.list .labelblack{
+ background-color: #000 ;
+ color: #FFF;
+}
+
+.pagenote{ float: right;
+    font-size: 10px;
+}
+#loginform .fp_right { display: inline;float: right; margin-top: -20px;}
