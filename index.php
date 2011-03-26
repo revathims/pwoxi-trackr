@@ -52,7 +52,7 @@ switch (ENVIRONMENT) {
  * as this file.
  *
  */
-$system_path = '@cicore';
+	$system_path = '@cicore';
 
 /*
  * ---------------------------------------------------------------
@@ -68,7 +68,7 @@ $system_path = '@cicore';
  * NO TRAILING SLASH!
  *
  */
-$application_folder = 'trackrcore';
+	$application_folder = 'trackrcore';
 
 /*
  * --------------------------------------------------------------------
