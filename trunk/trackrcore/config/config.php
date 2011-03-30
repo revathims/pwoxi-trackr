@@ -274,10 +274,10 @@ $config['sess_cookie_name'] = 'pwoxi-trackr-session';
 $config['sess_expiration'] = 7200;
 $config['sess_expire_on_close'] = TRUE;
 $config['sess_encrypt_cookie'] = TRUE;
-$config['sess_use_database'] = FALSE; // @todo TRUE it if needed.
+$config['sess_use_database'] = TRUE; // @todo TRUE it if needed.
 $config['sess_table_name'] = 'sessions';
 $config['sess_match_ip'] = TRUE;
-$config['sess_match_useragent'] = TRUE;
+$config['sess_match_useragent'] = TRUE; 
 $config['sess_time_to_update'] = 300;
 
 /*
